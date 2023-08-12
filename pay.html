@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+   .container{
+            border: 3px solid black;
+            margin: auto;
+            padding: 3px;
+            text-align: center;
+           color: white;
+            width: 50%;
+            height: 100%;
+            
+              padding-top: 100px;
+        }
+        .us{
+            
+            margin: 3px;
+            padding: 3px;
+        }
+           body{
+           background-image: url("https://images.moneycontrol.com/static-mcnews/2021/08/Digital-payment.jpg?impolicy=website&width=1600&height=900");
+            background-size: cover;
+            box-sizing: border-box;
+         font-size: 30px;}
+          #search{
+         width: 8em;  height: 4em;
+        }
+        h2{
+         color: black;
+        }
+</style>
+</head>
+<body>
+  <form action=pay.jsp method="post">
+    <div class="container">
+        <h2>Payment</h2>
+     
+    <div class="us">
+        <label >Voucher No</label>
+        <input type="text" name="voucher_no" >
+    </div>
+    <div class="us">
+        <label >Cust ID</label>
+        <input type="text" name="customer_id">
+    </div>
+     <div class="us">
+        <label >Date</label>
+        <input type="date" name="date">
+    </div>
+     
+   <div class="us">
+        <label >Payment Mode</label>
+        <select name="Payment_mode" id="">
+<option value="En">Cash</option>
+<option value="ne">Credit Card</option>
+<option value="En">UPI Payment</option>
+<option value="ne">others</option>
+ </select>
+    </div>
+     
+         
+         
+      <div class="us">
+        <label >Total Amount</label>
+        <input type="text" name="total_amt">
+         </div>
+         <div class="us">
+        <label >Status</label>
+        <input type="text" name="status">
+          </div>
+        
+        <input type="submit" value="Save"id="search" size="">
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+   .container{
+            border: 3px solid black;
+            margin: auto;
+            padding: 3px;
+            text-align: center;
+           color: white;
+            width: 50%;
+            height: 100%;
+            
+              padding-top: 100px;
+             
+        }
+        .us{
+            
+            margin: 3px;
+            padding: 3px;
+        }
+           body{
+           background-image: url("https://images.unsplash.com/photo-1432847712612-926caafaa802?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80");
+            background-size: cover;
+            box-sizing: border-box;
+         font-size: 30px;}
+          #search{
+         width: 8em;  height: 4em;
+        }
+</style>
+</head>
+<body>
+  <form action=signup.jsp method="post">
+    <div class="container">
+        <h2>Register Now!</h2>
+        
+    <div class="us">
+        <label > UserName</label>
+        <input type="text" name="username" required>
+    </div>
+     <div class="us">
+        <label >Mobile No</label>
+        <input type="text" name="mobileno"required>
+    </div>
+   
+   <div class="us">
+        <label >Email Id</label>
+        <input type="Email" name="email"required>
+    </div>
+     
+        
+   <div class="us">
+        <label >Password</label>
+        <input type="password" name="password" required>
+    </div>
+     
+        <input type="submit" value="Register"id="search" size="">
+    </div>
+    </div>
+</body>
+</html>

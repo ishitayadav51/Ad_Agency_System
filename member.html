@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function askYesNoQuestion(question) {
+  let answer = prompt(question + " (yes or no)");
+  if (answer.toLowerCase() === "yes") {
+    return true;
+  } else if (answer.toLowerCase() === "no") {
+    return false;
+  } else {
+    // If the user enters an invalid response, prompt again
+    alert("Please enter 'yes' or 'no'");
+    return askYesNoQuestion(question);
+  }
+}
+
+// Example usage
+let answer = askYesNoQuestion("Already a Member?");
+if (answer) {
+    window.location.assign("login.html");
+} else {
+    window.location.assign("signup.html");
+}
+
+    </script>
+</head>
+<body>

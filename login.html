@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<style>
+        .container{
+            border: 3px solid black;
+            margin: auto;
+            padding: 3px;
+            text-align: center;
+           color: white;
+            width: 50%;
+            height: 100%;
+            
+              padding-top: 100px;
+        }
+        .us{
+            
+            margin: 3px;
+            padding: 3px;
+        }
+        body{
+           background-image: url("https://t4.ftcdn.net/jpg/04/60/71/01/360_F_460710131_YkD6NsivdyYsHupNvO3Y8MPEwxTAhORh.jpg");
+            background-size: cover;
+            box-sizing: border-box;
+         font-size: 50px;
+        }
+        #search{
+         width: 10em;  height: 4em;
+        }
+        input.largerCheckbox{
+  width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <form action="Login.jsp" method="post">
+    <div class="container">
+        <h2>Login Form</h2>
+        <div class="us">
+        <label >Username</label>
+        <input type="text" name="username" size=50px >
+    </div>
+    <div class="us">
+        <label >password</label>
+        <input type="password" name="password"size=50px>
+    </div>
+    <div class="us">
+        
+        <input type="submit" value="Login" id="search">
+        <label > Remember me</label>
+        <input type="checkbox" name="checkbox" class="largerCheckbox">
+    </div>
+   
+    </div>
+</form>
+
+</body>
+</html>
+
+ 

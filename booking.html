@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+   .container{
+            border: 3px solid black;
+            margin: auto;
+            padding: 3px;
+            text-align: center;
+           color: black;
+            width: 50%;
+            height: 100%;
+            
+              padding-top: 100px;
+        }
+        .us{
+            
+            margin: 3px;
+            padding: 3px;
+        }
+           body{
+           background-image: url("https://previews.123rf.com/images/ratatouille/ratatouille1704/ratatouille170400098/76948011-shopping-trolley-and-credit-card-on-super-market-blur-background-online-payment-electronic.jpg");
+            background-size: cover;
+            box-sizing: border-box;
+         font-size: 30px;}
+          #search{
+         width: 8em;  height: 4em;
+        }
+</style>
+</head>
+<body>
+  <form action=booking.jsp  method="post">
+    <div class="container">
+        <h2>AD Booking</h2>
+        <div class="us">
+        <label >Booking No</label>
+        <input type="text" name="booking_no">
+    </div>
+    <div class="us">
+        <label >Cust Id</label>
+        <input type="text" name="customer_id" >
+    </div>
+     <div class="us">
+        <label >Date</label>
+        <input type="date" name="date">
+    </div>
+     
+     <div class="us">
+        <label >Mobile No</label>
+        <input type="text" name="mobile_no">
+    </div>
+    <div class="us">
+        <label >AD Type</label>
+        <input type="radio" name="newspaper" value="news">News Paper
+<input type="radio" name="tvchannel" value="tv"> TV Channel
+    </div>
+   
+    
+      <div class="us">
+        <label >Rate</label>
+        <input type="text" name="rate">
+         <div class="us">
+         
+         
+      <div class="us">
+        <label >Total Amount</label>
+        <input type="text" name="total_amt">
+         <div class="us">
+        
+        <input type="submit" value="Save"id="search" size="">
+    </div>
+    </div>
+</body>
+</html>

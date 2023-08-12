@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+   .container{
+           border: 3px solid black;;
+            margin: auto;
+            padding: 3px;
+            text-align: center;
+           color: black;
+            width: 50%;
+            height: 100%;
+            
+              padding-top: 100px;
+        }
+        .us{
+            
+            margin: 3px;
+            padding: 3px;
+        }
+           body{
+           background-image: url("https://previews.123rf.com/images/volody10/volody101903/volody10190300166/118899524-black-and-white-repeating-torn-newspaper-background-continuous-pattern-left-right-up-and-down.jpg");
+            background-size: cover;
+            box-sizing: border-box;
+         font-size: 30px;}
+          #search{
+         width: 8em;  height: 4em;
+        }
+</style>
+</head>
+<body>
+  <form action=news.jsp method="post">
+    <div class="container">
+        <h2>News Channel</h2>
+        <div class="us">
+        <label >NewsChannel code</label>
+        <input type="text" name="co">
+    </div>
+    <div class="us">
+        <label >Name</label>
+        <input type="text" name="na" >
+    </div>
+      <div class="us">
+        <label >Address</label>
+        <input type="text" name="ad">
+    </div>
+     <div class="us">
+        <label >Mobile No</label>
+        <input type="text" name="mo">
+    </div>
+   
+     <div class="us">
+        <label >Newspaper Section</label>
+        <select name="new_sec" id="">
+<option value="En">Entertainment</option>
+<option value="ne">News</option>
+<option value="kn">Knowledge</option>
+<option value="sh">Shopping</option>
+<option value="mu">Music</option>
+<option value="fu">Food</option>
+        </select>
+        
+    </div>
+      <div class="us">
+        <label >Language</label>
+        <select name="language" id="">
+<option value="En">English</option>
+<option value="ne">Hindi</option>
+<option value="En">Marathi</option>
+<option value="ne">others</option>
+ </select>
+    </div>
+      <div class="us">
+        <label >Rate/sec</label>
+        <input type="text" name="sc">
+         <div class="us">
+        
+        <input type="submit" value="Save"id="search" size="">
+    </div>
+    </div>
+</body>
+</html>
